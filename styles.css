@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 :root{
     --Paleblue: hsl(225, 100%, 94%);
     --Brightblue: hsl(245, 75%, 52%);
@@ -9,6 +9,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-image: url(./images/pattern-background-desktop.svg);
@@ -16,7 +17,6 @@ body{
     background-repeat: no-repeat;
     font-family: 'Red Hat Display', sans-serif;
     background-color: var(--Paleblue);
-    font-size: 16px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -45,6 +45,7 @@ body{
 }
 .music img{
     width: 40px;
+    margin-bottom: 0;
 }
 .music{
     margin-bottom: 40px;
@@ -57,6 +58,9 @@ body{
 .music a{
     color: var(--Brightblue);
     font-weight: 500;
+}
+.music a:hover{
+    color: #766CF1;
 }
 .info{
     padding: 0 30px 30px 30px;
@@ -84,10 +88,17 @@ body{
     margin-bottom: 35px;
     box-shadow: 0px 17px 7px 0px rgba(56,41,224,0.25);
     cursor: pointer;
+    transition: all ease 400ms;
+}
+.payment button:hover{
+    background-color: #766CF1;
 }
 .payment a{
     text-decoration: none;
-    color: var(--Desaturatedblue)
+    color: var(--Desaturatedblue);
+}
+.payment a:hover{
+    color: #1F2E55;
 }
 
 @media screen and (max-width: 420px) {
